@@ -7,7 +7,6 @@ import Staging from "./components/Staging";
 function App() {
   const [numberOfBars, setNumberOfBars] = useState(15);
   const [bars, setBars] = useState([]);
-  const [isSorting, setIsSorting] = useState(false);
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -16,8 +15,6 @@ function App() {
         setNumberOfBars={setNumberOfBars}
         bars={bars}
         setBars={setBars}
-        isSorting={isSorting}
-        setIsSorting={setIsSorting}
       />
       <Staging numberOfBars={numberOfBars} bars={bars} setBars={setBars} />
       <Footer />

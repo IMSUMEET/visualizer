@@ -24,7 +24,7 @@ const Staging = ({ numberOfBars, bars, setBars }) => {
   }, [numberOfBars]);
 
   return (
-    <div className="bg-primary_dark h-[40rem] px-6 py-4 flex-grow flex items-end">
+    <div className="bg-primary_dark h-[40rem] px-1 py-1 flex-grow flex items-end">
       <div className="w-full h-full border border-black flex justify-center items-end">
         <div className="w-full h-full flex justify-center items-end overflow-auto">
           {bars.map((bar, index) => (
